@@ -1,0 +1,320 @@
+/* HOMEPAGE */
+body {
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    display: inline-block;
+    position: absolute;
+
+}
+
+body.homepage {
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+#nav-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    z-index: 1;
+}
+
+#title {
+    color: white;
+    font-weight: 200;
+    display: block;
+    margin-left: 30px;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 2;
+}
+
+#title.hover {
+    color:#EAC43C;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+#nav-items {
+    position: fixed;
+    height: 80px;
+    margin-left: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    position: relative;
+    width: auto;
+    font-family: 'Jost';
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+    color: white;
+}
+
+.nav-item:hover {
+    color: #EAC43C;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+#landing {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+
+#left {
+    position: relative;
+    bottom: 10vh;
+    left: -6%;
+    width: 50%;
+    z-index: 3;
+}
+
+#right {
+    position: absolute;
+    right: -8%;
+    top: 65vh;
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    display: block;
+    width: 50%;
+    justify-content: left;
+}
+
+
+#meskes {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.button {
+    position: relative;
+    background-color: #EAC43C;
+    font-family: 'Jost';
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+
+}
+
+.button:hover {
+    background-color:#cd619e;
+    color: white;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.see-more {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-family: 'Jost';
+    font-weight: 200;
+    color: white;
+    
+    width: 100vw;
+    align-items: center;
+    top: 80vh;
+    transition: transform .3s ease-out;
+}
+
+#arrow {
+    display: block;
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.see-more:hover {
+    transform: translate(0, 5px);
+    cursor: pointer;
+
+}
+
+/* MENU PAGE */
+
+body.menu-page {
+    width: 100vw;
+    height: auto;
+}
+
+#content {
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menu {
+    text-align: center;
+}
+
+.menu-background {
+    background-color: white;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+.menu-section-multicolumn {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.top {
+    position: fixed;
+    display: block;
+    text-align: center;
+    font-family: 'Jost';
+    font-weight: 200;
+    color: white;
+    left: 40vw;
+    
+    width: 100vw;
+    align-items: center;
+    top: 80vh;
+    transition: transform .3s ease-out;
+}
+
+#arrow-up {
+    transform: rotate(180deg);
+    width: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top:hover {
+    transform: translate(0, -5px);
+    cursor:pointer;
+}
+
+/* UNIVERSAL TEXT PROPERTIES */
+
+h1 { 
+    /* Meske's on homepage, Menu on menu */
+    font-family: 'Caudex';
+    font-weight: 200;
+    font-size: 72px;
+    color: white;
+}
+
+h2 { 
+    /* Section titles on menu (Popular Items) */
+    font-family: 'Caudex';
+    font-size: 32px;
+    margin-bottom: 10px;
+
+}
+
+h3 {
+    /* Menu item name */
+    font-family: 'Caudex';
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+h4 {
+    /* Menu item price */
+    font-family: 'Jost';
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+    margin: 2px;
+}
+
+h5 {
+    /* Menu item description */
+    font-family: 'Jost';
+    font-weight: 200;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+p {
+    font-family: 'Jost';
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.subtext {
+    font-family: 'Jost';
+    font-weight: 200;
+    font-size: 12px;
+    font-style: italic;
+    color: gray;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+a {
+    color: inherit;
+    font-style: normal;
+    text-decoration: none;
+}
